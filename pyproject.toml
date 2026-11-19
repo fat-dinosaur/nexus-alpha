@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus-alpha-poc"
+version = "0.1.0"
+description = "Evidence-first SEC EDGAR data ingestion proof of concept"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "NEXUS ALPHA Contributors"}]
+dependencies = []
+
+[project.scripts]
+nexus-alpha = "nexus_alpha.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
